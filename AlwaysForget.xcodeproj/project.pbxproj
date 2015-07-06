@@ -14,6 +14,8 @@
 		CE9FE2741B4A60FD00BACACB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE9FE2731B4A60FD00BACACB /* Images.xcassets */; };
 		CE9FE2771B4A60FD00BACACB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE9FE2751B4A60FD00BACACB /* LaunchScreen.xib */; };
 		CE9FE2831B4A60FD00BACACB /* AlwaysForgetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9FE2821B4A60FD00BACACB /* AlwaysForgetTests.swift */; };
+		CE9FE28D1B4A867400BACACB /* ManagedObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9FE28C1B4A867400BACACB /* ManagedObjects.swift */; };
+		CEBE40CA1B4A99850024F742 /* DebugTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBE40C91B4A99850024F742 /* DebugTools.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +40,8 @@
 		CE9FE27C1B4A60FD00BACACB /* AlwaysForgetTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlwaysForgetTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE9FE2811B4A60FD00BACACB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE9FE2821B4A60FD00BACACB /* AlwaysForgetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlwaysForgetTests.swift; sourceTree = "<group>"; };
+		CE9FE28C1B4A867400BACACB /* ManagedObjects.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManagedObjects.swift; sourceTree = "<group>"; };
+		CEBE40C91B4A99850024F742 /* DebugTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DebugTools.swift; path = AlwaysForget/DebugTools.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +68,7 @@
 				CE9FE2661B4A60FD00BACACB /* AlwaysForget */,
 				CE9FE27F1B4A60FD00BACACB /* AlwaysForgetTests */,
 				CE9FE2651B4A60FD00BACACB /* Products */,
+				CEBE40CB1B4A9BEC0024F742 /* DebugTools */,
 			);
 			sourceTree = "<group>";
 		};
@@ -80,11 +85,10 @@
 			isa = PBXGroup;
 			children = (
 				CE9FE2691B4A60FD00BACACB /* AppDelegate.swift */,
-				CE9FE26E1B4A60FD00BACACB /* TestViewController.swift */,
+				CEBE40C81B4A94370024F742 /* DataModel */,
 				CE9FE2701B4A60FD00BACACB /* Main.storyboard */,
 				CE9FE2731B4A60FD00BACACB /* Images.xcassets */,
 				CE9FE2751B4A60FD00BACACB /* LaunchScreen.xib */,
-				CE9FE26B1B4A60FD00BACACB /* AlwaysForget.xcdatamodeld */,
 				CE9FE2671B4A60FD00BACACB /* Supporting Files */,
 			);
 			path = AlwaysForget;
@@ -113,6 +117,24 @@
 				CE9FE2811B4A60FD00BACACB /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CEBE40C81B4A94370024F742 /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				CE9FE28C1B4A867400BACACB /* ManagedObjects.swift */,
+				CE9FE26B1B4A60FD00BACACB /* AlwaysForget.xcdatamodeld */,
+				CE9FE26E1B4A60FD00BACACB /* TestViewController.swift */,
+			);
+			name = DataModel;
+			sourceTree = "<group>";
+		};
+		CEBE40CB1B4A9BEC0024F742 /* DebugTools */ = {
+			isa = PBXGroup;
+			children = (
+				CEBE40C91B4A99850024F742 /* DebugTools.swift */,
+			);
+			name = DebugTools;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -217,7 +239,9 @@
 			files = (
 				CE9FE26F1B4A60FD00BACACB /* TestViewController.swift in Sources */,
 				CE9FE26A1B4A60FD00BACACB /* AppDelegate.swift in Sources */,
+				CE9FE28D1B4A867400BACACB /* ManagedObjects.swift in Sources */,
 				CE9FE26D1B4A60FD00BACACB /* AlwaysForget.xcdatamodeld in Sources */,
+				CEBE40CA1B4A99850024F742 /* DebugTools.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -415,6 +439,7 @@
 				CE9FE2881B4A60FD00BACACB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CE9FE2891B4A60FD00BACACB /* Build configuration list for PBXNativeTarget "AlwaysForgetTests" */ = {
 			isa = XCConfigurationList;
@@ -423,6 +448,7 @@
 				CE9FE28B1B4A60FD00BACACB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
