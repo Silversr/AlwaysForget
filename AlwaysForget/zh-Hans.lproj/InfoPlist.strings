@@ -1,0 +1,8 @@
+/* (No Comment) */
+"CFBundleName" = "AlwaysForget";
+
+/* (No Comment) */
+"CFBundleShortVersionString" = "1.0";
+
+/* (No Comment) */
+"NSPhotoLibraryUsageDescription" = "相机用于拍照";

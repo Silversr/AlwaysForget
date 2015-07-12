@@ -1,0 +1,12 @@
+/* Photo Acquiring Action Sheet Camera Button Title */
+"Camera" = "照相机";
+
+/* Photo Acquiring Action Sheet Cancel Button Title */
+"Cancel" = "取消";
+
+/* Photo Acquiring Action Sheet Photo Library Button Title */
+"Photo Library" = "照片库";
+
+/* Photo Acquiring Action Sheet Title */
+"Please choose photo acquiring method" = "请选择照片获取方式";
+

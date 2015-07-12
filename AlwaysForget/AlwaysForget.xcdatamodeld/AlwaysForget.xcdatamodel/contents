@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model userDefinedModelVersionIdentifier="Version 1.0" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="7701" systemVersion="14D136" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
-    <entity name="Category" syncable="YES">
+    <entity name="Category" representedClassName="AlwaysForget.CategoryMO" syncable="YES">
         <attribute name="name" attributeType="String" syncable="YES"/>
-        <fetchedProperty name="weakChildItems" optional="YES" syncable="YES">
-            <fetchRequest name="fetchedPropertyFetchRequest" entity="Category"/>
-        </fetchedProperty>
     </entity>
-    <entity name="Item" representedClassName="" syncable="YES">
+    <entity name="Item" representedClassName="AlwaysForget.ItemMO" syncable="YES">
         <attribute name="categoryTag" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="creationDate" attributeType="Date" syncable="YES"/>
         <attribute name="detail" optional="YES" attributeType="String" syncable="YES"/>
@@ -17,19 +14,15 @@
         <attribute name="positionY" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
         <relationship name="containerScene" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Scene" inverseName="childItems" inverseEntity="Scene" syncable="YES"/>
     </entity>
-    <entity name="Scene" syncable="YES">
+    <entity name="Scene" representedClassName="AlwaysForget.SceneMO" syncable="YES">
         <attribute name="creationDate" attributeType="Date" syncable="YES"/>
         <attribute name="localIdentifier" attributeType="String" syncable="YES"/>
         <attribute name="room" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="childItems" optional="YES" toMany="YES" deletionRule="Deny" destinationEntity="Item" inverseName="containerScene" inverseEntity="Item" syncable="YES"/>
-    </entity>
-    <entity name="Test" representedClassName="" syncable="YES">
-        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="childItems" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Item" inverseName="containerScene" inverseEntity="Item" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Category" positionX="-27" positionY="63" width="128" height="89"/>
+        <element name="Category" positionX="-27" positionY="63" width="128" height="60"/>
         <element name="Item" positionX="-54" positionY="-9" width="128" height="180"/>
         <element name="Scene" positionX="-63" positionY="-18" width="128" height="105"/>
-        <element name="Test" positionX="-18" positionY="81" width="128" height="60"/>
     </elements>
 </model>

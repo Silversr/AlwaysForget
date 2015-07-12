@@ -8,12 +8,30 @@
 
 import UIKit
 import CoreData
-
+//MARK:appDelegate Obj
+let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+//LocalizedStringConstants
+private let defaultCatetory1 = NSLocalizedString("Clothing",comment: "Default Catetory 1")
+private let defaultCatetory2 = NSLocalizedString("Others",comment: "Default Catetory 1")
+private let defaultCatetory3 = NSLocalizedString("Priceless",comment: "Default Catetory 1")
+private let defaultCatetory4 = NSLocalizedString("LittleStuff",comment: "Default Catetory 1")
+//MARK: AppDelegate
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    lazy var categories:[CategoryMO] = {
+        if CategoryMO.fetchCategories() != nil{
+            return CategoryMO.fetchCategories()!
+        }else{
+            CategoryMO.insertNewCategory(categoryName: defaultCatetory1)
+            CategoryMO.insertNewCategory(categoryName: defaultCatetory1)
+            CategoryMO.insertNewCategory(categoryName: defaultCatetory1)
+            CategoryMO.insertNewCategory(categoryName: defaultCatetory1)
+            return CategoryMO.fetchCategories()!
+        }
+        
+    }()
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.

@@ -16,6 +16,12 @@
 		CE9FE2831B4A60FD00BACACB /* AlwaysForgetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9FE2821B4A60FD00BACACB /* AlwaysForgetTests.swift */; };
 		CE9FE28D1B4A867400BACACB /* ManagedObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9FE28C1B4A867400BACACB /* ManagedObjects.swift */; };
 		CEBE40CA1B4A99850024F742 /* DebugTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBE40C91B4A99850024F742 /* DebugTools.swift */; };
+		CEBE40D11B4AACF30024F742 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBE40D01B4AACF30024F742 /* HomeViewController.swift */; };
+		CEBE40D31B4AAF840024F742 /* AddingNewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBE40D21B4AAF840024F742 /* AddingNewViewController.swift */; };
+		CED04B0C1B4DF87A0009B1E4 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CED04B0E1B4DF87A0009B1E4 /* Localizable.strings */; };
+		CED04B111B4DF87B0009B1E4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CED04B131B4DF87B0009B1E4 /* InfoPlist.strings */; };
+		CED04B161B4DF87B0009B1E4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CED04B181B4DF87B0009B1E4 /* InfoPlist.strings */; };
+		CED04B1A1B4EA5710009B1E4 /* CameraOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED04B191B4EA5710009B1E4 /* CameraOverlayView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +48,15 @@
 		CE9FE2821B4A60FD00BACACB /* AlwaysForgetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlwaysForgetTests.swift; sourceTree = "<group>"; };
 		CE9FE28C1B4A867400BACACB /* ManagedObjects.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManagedObjects.swift; sourceTree = "<group>"; };
 		CEBE40C91B4A99850024F742 /* DebugTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DebugTools.swift; path = AlwaysForget/DebugTools.swift; sourceTree = "<group>"; };
+		CEBE40D01B4AACF30024F742 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		CEBE40D21B4AAF840024F742 /* AddingNewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddingNewViewController.swift; sourceTree = "<group>"; };
+		CECFFACC1B4D549F0056C163 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		CED04B041B4DF1B10009B1E4 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		CED04B051B4DF1B10009B1E4 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		CED04B0D1B4DF87A0009B1E4 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		CED04B121B4DF87B0009B1E4 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		CED04B171B4DF87B0009B1E4 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		CED04B191B4EA5710009B1E4 /* CameraOverlayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraOverlayView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +100,8 @@
 			isa = PBXGroup;
 			children = (
 				CE9FE2691B4A60FD00BACACB /* AppDelegate.swift */,
+				CEBE40D41B4AAF900024F742 /* AddingNewViewController */,
+				CEBE40CE1B4AAC790024F742 /* HomeViewController */,
 				CEBE40C81B4A94370024F742 /* DataModel */,
 				CE9FE2701B4A60FD00BACACB /* Main.storyboard */,
 				CE9FE2731B4A60FD00BACACB /* Images.xcassets */,
@@ -97,6 +114,8 @@
 		CE9FE2671B4A60FD00BACACB /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				CED04B131B4DF87B0009B1E4 /* InfoPlist.strings */,
+				CED04B0E1B4DF87A0009B1E4 /* Localizable.strings */,
 				CE9FE2681B4A60FD00BACACB /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -114,6 +133,7 @@
 		CE9FE2801B4A60FD00BACACB /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				CED04B181B4DF87B0009B1E4 /* InfoPlist.strings */,
 				CE9FE2811B4A60FD00BACACB /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -122,9 +142,9 @@
 		CEBE40C81B4A94370024F742 /* DataModel */ = {
 			isa = PBXGroup;
 			children = (
-				CE9FE28C1B4A867400BACACB /* ManagedObjects.swift */,
 				CE9FE26B1B4A60FD00BACACB /* AlwaysForget.xcdatamodeld */,
 				CE9FE26E1B4A60FD00BACACB /* TestViewController.swift */,
+				CE9FE28C1B4A867400BACACB /* ManagedObjects.swift */,
 			);
 			name = DataModel;
 			sourceTree = "<group>";
@@ -135,6 +155,23 @@
 				CEBE40C91B4A99850024F742 /* DebugTools.swift */,
 			);
 			name = DebugTools;
+			sourceTree = "<group>";
+		};
+		CEBE40CE1B4AAC790024F742 /* HomeViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CEBE40D01B4AACF30024F742 /* HomeViewController.swift */,
+			);
+			name = HomeViewController;
+			sourceTree = "<group>";
+		};
+		CEBE40D41B4AAF900024F742 /* AddingNewViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CEBE40D21B4AAF840024F742 /* AddingNewViewController.swift */,
+				CED04B191B4EA5710009B1E4 /* CameraOverlayView.swift */,
+			);
+			name = AddingNewViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -181,6 +218,7 @@
 		CE9FE25C1B4A60FD00BACACB /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0630;
 				ORGANIZATIONNAME = Silversr;
 				TargetAttributes = {
@@ -217,6 +255,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CED04B0C1B4DF87A0009B1E4 /* Localizable.strings in Resources */,
+				CED04B111B4DF87B0009B1E4 /* InfoPlist.strings in Resources */,
 				CE9FE2721B4A60FD00BACACB /* Main.storyboard in Resources */,
 				CE9FE2771B4A60FD00BACACB /* LaunchScreen.xib in Resources */,
 				CE9FE2741B4A60FD00BACACB /* Images.xcassets in Resources */,
@@ -227,6 +267,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CED04B161B4DF87B0009B1E4 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -237,11 +278,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CED04B1A1B4EA5710009B1E4 /* CameraOverlayView.swift in Sources */,
+				CEBE40D31B4AAF840024F742 /* AddingNewViewController.swift in Sources */,
 				CE9FE26F1B4A60FD00BACACB /* TestViewController.swift in Sources */,
 				CE9FE26A1B4A60FD00BACACB /* AppDelegate.swift in Sources */,
 				CE9FE28D1B4A867400BACACB /* ManagedObjects.swift in Sources */,
 				CE9FE26D1B4A60FD00BACACB /* AlwaysForget.xcdatamodeld in Sources */,
 				CEBE40CA1B4A99850024F742 /* DebugTools.swift in Sources */,
+				CEBE40D11B4AACF30024F742 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,6 +312,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				CE9FE2711B4A60FD00BACACB /* Base */,
+				CECFFACC1B4D549F0056C163 /* en */,
+				CED04B041B4DF1B10009B1E4 /* zh-Hans */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -276,8 +322,33 @@
 			isa = PBXVariantGroup;
 			children = (
 				CE9FE2761B4A60FD00BACACB /* Base */,
+				CED04B051B4DF1B10009B1E4 /* zh-Hans */,
 			);
 			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		CED04B0E1B4DF87A0009B1E4 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CED04B0D1B4DF87A0009B1E4 /* zh-Hans */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		CED04B131B4DF87B0009B1E4 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CED04B121B4DF87B0009B1E4 /* zh-Hans */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		CED04B181B4DF87B0009B1E4 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CED04B171B4DF87B0009B1E4 /* zh-Hans */,
+			);
+			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -319,7 +390,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -357,7 +428,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;

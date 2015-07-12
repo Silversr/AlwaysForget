@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>0447A8EC-1B44-4408-83FA-0FEFBF79D92F</string>
 	<key>IDESourceControlProjectName</key>
-	<string>AlwaysForget</string>
+	<string>project</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>98EA7746D1F00DF014B70C5EB5E13877D856F0C2</key>
 		<string>https://github.com/Silversr/AlwaysForget.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>AlwaysForget.xcodeproj</string>
+	<string>AlwaysForget.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>98EA7746D1F00DF014B70C5EB5E13877D856F0C2</key>
